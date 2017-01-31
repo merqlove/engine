@@ -176,5 +176,8 @@ class Locomotive.Views.Shared.FormView extends Backbone.View
     @$('.input.tags input[type=text]').tagsinput('destroy')
     @$('.input.color .input-group').colorpicker('destroy')
 
+    _.each @inputs, (view) -> view.remove()
+    _.each @tokens, (token) -> PubSub.unsubscribe(token)
+
   _stop_event: (event) ->
     event.stopPropagation() & event.preventDefault()
