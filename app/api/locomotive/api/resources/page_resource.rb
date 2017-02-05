@@ -43,6 +43,7 @@ module Locomotive
             requires :page, type: Hash do
               requires :title
               requires :slug
+              optional :slug_ext
               requires :parent
               optional :template
               optional :position, type: Integer
@@ -81,6 +82,7 @@ module Locomotive
             requires :page, type: Hash do
               optional :title
               optional :slug
+              optional :slug_ext
               optional :parent
               optional :position, type: Integer
               optional :handle

@@ -9,7 +9,7 @@ module Locomotive
                 :listed, :published, :translated_in, :cache_enabled
 
         # Path
-        expose :slug, :fullpath
+        expose :slug, :fullpath, :slug_ext
 
         expose :localized_fullpaths do |page, options|
           (options[:site].try(:locales) || []).inject({}) do |hash, locale|
