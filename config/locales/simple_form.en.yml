@@ -41,6 +41,7 @@ en:
             password_confirmation: New password confirmation
         page:
           seo_title: Title
+          slug_ext: Extension
           target_klass_name: Model
         editable_element:
           region: Sections
@@ -48,6 +49,7 @@ en:
           locales: Languages
           timezone_name: Timezone
           cache_enabled: Cache
+          strict_slug_enabled: Extension strict checking
           private_access: "Enable password-protection"
           password: "Site-Wide Password"
           new:
@@ -82,6 +84,7 @@ en:
           published: "Only authenticated accounts can view unpublished pages."
           templatized: "Use the page as a template for a model you defined."
           cache_enabled: "When enabled, your page will be cached as long as the content doesn't change."
+          slug_ext: "Provide path extension for strict checking."
           listed: "Control whether to show the page from generated menus."
           target_klass_name: "The type of content this page will be a template for."
           seo_title: "Define a page title which should be used as the value for the title tag in the head section. Leave it empty if you want to use the default value from the site settings."
@@ -98,6 +101,7 @@ en:
           domains: "Add your domains just below. Documentation <a href=\"https://locomotive-v3.readme.io/docs/domains\">here</a> for more information."
           memberships: "You can invite other accounts to edit/manage the site."
           cache_enabled: "When enabled, your pages will be cached as long as the content doesn't change. Disabling cache per page is allowed."
+          strict_slug_enabled: "When enabled, any page view will be in strict extension checking mode."
           redirect_to_first_domain: "When enabled, requests made to any domains listed above will be redirected to the first domain."
           redirect_to_https: "When enabled, non secure requests will be redirected to https. This requires the installation of a SSL certificate on the web server."
           url_redirections: "Redirect (301) legacy urls to pages you created in the back-office. The origin and the destination URLs are separated by a <u>space</u>."

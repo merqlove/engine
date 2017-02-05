@@ -9,6 +9,8 @@
 
   = f.input :cache_enabled, as: :toggle
 
+  = f.input :strict_slug_enabled, as: :toggle
+
 - if policy(@site).destroy?
   = f.actions do
     .row

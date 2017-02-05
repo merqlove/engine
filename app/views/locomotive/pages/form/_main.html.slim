@@ -9,6 +9,8 @@
 
     = f.input :slug
 
+    = f.input :slug_ext
+
     = f.input :parent_id, as: :select, collection: parent_pages_options, include_blank: false
 
     - if policy(current_site).site_admin_or_designer?
