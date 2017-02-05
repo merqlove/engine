@@ -40,6 +40,7 @@ module Locomotive
               optional :locales, type: Array
               optional :domains, type: Array
               optional :timezone
+              optional :strict_slug_enabled
               optional :picture
               optional :metafields_schema
               optional :metafields
