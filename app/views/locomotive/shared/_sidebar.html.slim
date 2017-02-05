@@ -22,10 +22,11 @@
       i.fa.fa-picture-o
       span= t('.assets')
 
-    - if current_site.translations.count > 0
-      = link_to translations_path(current_site), class: sidebar_link_class(:translations) do
-        i.fa.fa-globe
-        span= t('.translations')
+    - if policy(current_site).update?
+      - if current_site.translations.count > 0
+        = link_to translations_path(current_site), class: sidebar_link_class(:translations) do
+          i.fa.fa-globe
+          span= t('.translations')
 
     - if current_site.has_metafields?
       = link_to current_site_metafields_path(current_site), class: sidebar_link_class(:current_site_metafields) do

@@ -29,8 +29,6 @@ ru:
         domains: Доменные имена
         redirect_to_first_domain: Перенаправление на первый домен
         redirect_to_https: Перенаправление на HTTPS
-        strict_slug_enabled: Проверка расширения
-        cache_enabled: Кеш
         prefix_default_locale: Добавлять префикс шаблонам для каждого языка
       locomotive/page:
         <<: *base_locomotive
@@ -38,7 +36,6 @@ ru:
         published: Опубликована
         parent_id: Родительская страница
         slug: Ссылка
-        slug_ext: Расширение
       locomotive/content_entry:
         created_at: Создано
   errors:
