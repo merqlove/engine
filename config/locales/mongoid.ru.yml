@@ -1,4 +1,12 @@
 ru:
+  base_locomotive: &base_locomotive
+    handle: Указатель
+    picture: Изображение
+    name: Название
+    title: Заголовок
+    redirect: Перенаправление
+    redirect_url: Путь перенаправления
+    redirect_type: Тип перенаправления
   mongoid:
     errors:
       messages:
@@ -15,6 +23,22 @@ ru:
             email:
               unique_account: "уже используется"
     attributes:
+      locomotive/site:
+        <<: *base_locomotive
+        memberships: Владельцы
+        domains: Доменные имена
+        redirect_to_first_domain: Перенаправление на первый домен
+        redirect_to_https: Перенаправление на HTTPS
+        strict_slug_enabled: Проверка расширения
+        cache_enabled: Кеш
+        prefix_default_locale: Добавлять префикс шаблонам для каждого языка
+      locomotive/page:
+        <<: *base_locomotive
+        listed: Меню
+        published: Опубликована
+        parent_id: Родительская страница
+        slug: Ссылка
+        slug_ext: Расширение
       locomotive/content_entry:
         created_at: Создано
   errors:
