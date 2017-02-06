@@ -9,5 +9,7 @@ module Locomotive
 
     URL_AND_MAILTO      = /\A((https?:\/\/\S+)|(ftp:\/\S+)|(mailto:\S+)|\/\S*)\Z/
 
+    URL_AND_MAILTO_EMPTY = /\A((https?:\/\/\S+)|(ftp:\/\S+)|(mailto:\S+)|\/\S*)|()\Z/
+
   end
 end
